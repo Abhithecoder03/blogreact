@@ -6,7 +6,7 @@ const path = require('path');
 require('dotenv').config();
 
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT;
 const mdburl=process.env.DATABASE
 
 const fs = require('fs');
