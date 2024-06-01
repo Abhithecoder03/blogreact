@@ -17,7 +17,7 @@ const app = express();
 
 app.use(express.json());
 
-// const mdburl='mongodb+srv://Abhidemo03:9696858107@cluster0.jf2t9qo.mongodb.net/Student?retryWrites=true&w=majority';
+
 mongoose.connect(mdburl,{useNewUrlParser: true,useUnifiedTopology:true})
 .then((result)=>app.listen(port))
 .catch((err)=>console.log(err));
